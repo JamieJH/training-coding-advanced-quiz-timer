@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Captical Cities Quiz">
+    <title>Quiz Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Test your capital cities knowledge!</h1>
+        <div class="timer-container">
+            <div class="timer">
+                <p><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></p>
+                <p id="millisecs">0</p>
+            </div>
+        </div>
+
+        <div class="quiz">
+            <label for="quiz__answer" id="quiz__question"></label>
+            <textarea id="quiz__answer"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button id="timer-toggler">Start</button>
+            <button id="timer-clear">Clear All</button>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

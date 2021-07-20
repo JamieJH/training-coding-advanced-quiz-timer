@@ -1,0 +1,149 @@
+:root {
+    --text-light: #ffffff;
+    --bg-body: #fffcd4;
+    --bg-timer: #243761;
+    --bg-clear-button: #ca3f3f;
+    --bg-hover-clear-button: #c42929;
+    --bg-timer-toggler-button: #2d8fbd;
+    --bg-hover-timer-toggler-button: #207da8;
+    --transition-short: all 0.3s ease;
+}
+
+body, html, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-body);
+}
+
+main {
+    width: 90%;
+    max-width: 500px;
+    margin: 100px auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+.timer-container {
+    background-color: var(--bg-timer);
+    margin-bottom: 100px;
+    font-size: 60px;
+    flex-flow: column;
+    padding: 30px 0;
+    letter-spacing: 1px;
+}
+
+.timer {
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--text-light);
+    border-radius: 10px;
+}
+
+#millisecs {
+    justify-self: flex-end;
+    font-size: 25px;
+    text-align: right;
+}
+
+.quiz>div {
+    margin-bottom: 50px;
+}
+
+.quiz {
+    display: block;
+    height: 0;
+    margin: 20px 0;
+    transition: var(--transition-short);
+    overflow: hidden;
+}
+
+.quiz.show {
+    height: 220px;
+}
+
+.quiz>* {
+    margin: 20px 0;
+}
+
+#quiz__question {
+    font-size: 1.2rem;
+}
+
+#quiz__answer {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 7px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.buttons {
+    margin: 40px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.buttons button {
+    border: none;
+    padding: 8px 20px;
+    margin: 10px;
+    display: inline-block;
+    color: var(--text-light);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    cursor: pointer;
+    transition: var(--transition-short);
+}
+
+button#timer-toggler {
+    background-color: var(--bg-timer-toggler-button);
+}
+
+button#timer-toggler::after {
+    content: " Quiz";
+}
+
+button#timer-toggler:hover {
+    background-color: var(--bg-hover-timer-toggler-button);
+}
+
+button#timer-clear {
+    background-color: var(--bg-clear-button);
+}
+
+button#timer-clear:hover {
+    background-color: var(--bg-hover-clear-button);
+}
+
+#quiz-record {
+    display: none;
+}
+
+#quiz-record-list {
+    padding: 0;
+}
+
+.quiz-pair {
+    margin: 15px 0;
+}
+
+.quiz-pair>* {
+    margin: 8px 0;
+}
+
+@media screen and (min-width: 481px) {
+    .buttons button {
+        margin: 0 10px;
+    }
+    .quiz.show {
+        height: 180px;
+    }
+}
