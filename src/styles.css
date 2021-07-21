@@ -1,5 +1,8 @@
 :root {
     --text-light: #ffffff;
+    --text-dark: #000000;
+    --text-answer-correct: #2b774b;
+    --text-answer-incorrect: #b43636;
     --bg-body: #fffcd4;
     --bg-timer: #243761;
     --bg-clear-button: #ca3f3f;
@@ -31,7 +34,7 @@ main h1 {
 
 .timer-container {
     background-color: var(--bg-timer);
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     font-size: 60px;
     flex-flow: column;
     padding: 30px 0;
@@ -51,11 +54,27 @@ main h1 {
     text-align: right;
 }
 
-.quiz>div {
+.quiz-score {
+    width: 100px;
+    margin: 0 auto;
+
+}
+
+#quiz-score__score {
+    padding: 10px;
+    text-align: center;
+    background: var(--text-answer-correct);
+    color: var(--text-light);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#quiz__container>div {
     margin-bottom: 50px;
 }
 
-.quiz {
+#quiz__container {
     display: block;
     height: 0;
     margin: 20px 0;
@@ -63,11 +82,11 @@ main h1 {
     overflow: hidden;
 }
 
-.quiz.show {
-    height: 220px;
+#quiz__container.show {
+    height: 180px;
 }
 
-.quiz>* {
+#quiz__container>* {
     margin: 20px 0;
 }
 
@@ -75,13 +94,47 @@ main h1 {
     font-size: 1.2rem;
 }
 
-#quiz__answer {
+#quiz__answer textarea {
     width: 100%;
     height: 100px;
     resize: none;
     padding: 7px;
     box-sizing: border-box;
     font-family: 'Gill Sans', sans-serif;
+}
+
+#quiz__answer .choice-radio-group {
+    margin: 5px 0;
+}
+
+.choice-radio-group input {
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.choice-radio-group label {
+    text-transform: capitalize;
+    margin-left: 10px;
+    font-weight: lighter;
+    color: var(--text-dark);
+}
+
+.choice-radio-group label.incorrect {
+    font-weight: bold;
+    color: var(--text-answer-incorrect);
+}
+
+.choice-radio-group label.incorrect::after {
+    content: " \2718";
+}
+
+.choice-radio-group label.correct {
+    font-weight: bold;
+    color: var(--text-answer-correct);
+}
+
+.choice-radio-group label.correct::after {
+    content: " \2713";
 }
 
 .buttons {
@@ -93,7 +146,7 @@ main h1 {
 .buttons button {
     border: none;
     padding: 8px 20px;
-    margin: 10px;
+    margin: 5px;
     display: inline-block;
     color: var(--text-light);
     font-size: 20px;
@@ -143,7 +196,7 @@ button#timer-clear:hover {
     .buttons button {
         margin: 0 10px;
     }
-    .quiz.show {
+    #quiz__container.show {
         height: 180px;
     }
 }
