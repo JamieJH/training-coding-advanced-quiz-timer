@@ -1,15 +1,187 @@
 {
-    "questions": [
-        "What is the capital of Taiwan?",
-        "What is the capital of Florida?",
-        "What is the capital of Afghanistan?",
-        "What is the capital of Australia?",
-        "What is the capital of Portugal?",
-        "What is the capital of South Korea?",
-        "What is the capital of Canada?",
-        "What is the capital of Malaysia?",
-        "What is the capital of Turkey?",
-        "What is the capital of Britain?",
-        "What is the capital of France?"
+    "quizes": [
+        {
+            "question": "What is the capital city of Taiwan?",
+            "correct-answer": "taipei",
+            "incorrect-answers": [
+                "tainan",
+                "new taipei",
+                "keelung"
+            ]
+        },
+        {
+            "question": "What is the capital city of Britain?",
+            "correct-answer": "london"
+        },
+        {
+            "question": "What is the capital city of Florida?",
+            "correct-answer": "tallahassee",
+            "incorrect-answers": [
+                "orlando",
+                "tampa",
+                "miami"
+            ]
+        },
+        {
+            "question": "What is the capital city of Afghanistan?",
+            "correct-answer": "kabul",
+            "incorrect-answers": [
+                "islamabad",
+                "baghdad",
+                "afghan"
+            ]
+        },
+        {
+            "question": "What is the capital city of Australia?",
+            "correct-answer": "canberra",
+            "incorrect-answers": [
+                "melbourne",
+                "sydney",
+                "perth"
+            ]
+        },
+        {
+            "question": "What is the capital city of Portugal?",
+            "correct-answer": "lisbon",
+            "incorrect-answers": [
+                "porto",
+                "seville",
+                "sintra"
+            ]
+        },
+        {
+            "question": "What is the capital city of South Korea?",
+            "correct-answer": "seoul",
+            "incorrect-answers": [
+                "daegu",
+                "busan",
+                "pyongyang"
+            ]
+        },
+        {
+            "question": "What is the capital city of Russia?",
+            "correct-answer": "moscow"
+        },
+        {
+            "question": "What is the capital city of Canada?",
+            "correct-answer": "ottawa",
+            "incorrect-answers": [
+                "toronto",
+                "montreal",
+                "calgary"
+            ]
+        },
+        {
+            "question": "What is the capital city of America?",
+            "correct-answer": "new york"
+        },
+        {
+            "question": "What is the capital city of Malaysia?",
+            "correct-answer": "kuala lumpur",
+            "incorrect-answers": [
+                "sabah",
+                "sarawak",
+                "penang"
+            ]
+        },
+        {
+            "question": "What is the capital city of France?",
+            "correct-answer": "paris"
+        },
+        {
+            "question": "What is the capital city of Turkey?",
+            "correct-answer": "ankara",
+            "incorrect-answers": [
+                "istanbul",
+                "izmir",
+                "konya"
+            ]
+        },
+        {
+            "question": "What is the capital city of Vietnam?",
+            "correct-answer": "ha noi"
+        },
+        {
+            "question": "What is the capital city of Germany?",
+            "correct-answer": "berlin"
+        },
+        {
+            "question": "What is the capital city of Bolivia?",
+            "correct-answer": "sucre",
+            "incorrect-answers": [
+                "la paz",
+                "oruro",
+                "cochabamba"
+            ]
+        },
+        {
+            "question": "What is the capital city of Japan?",
+            "correct-answer": "tokyo"
+        },
+        {
+            "question": "What is the capital city of Greenland?",
+            "correct-answer": "nuuk",
+            "incorrect-answers": [
+                "ushuaia",
+                "reykjavij",
+                "ilulissat"
+            ]
+        },
+        {
+            "question": "What is the capital city of China?",
+            "correct-answer": "beijing"
+        },
+        {
+            "question": "What is the capital city of India?",
+            "correct-answer": "new delhi"
+        },
+        {
+            "question": "What is the capital city of Pakistan?",
+            "correct-answer": "islamabad",
+            "incorrect-answers": [
+                "kabul",
+                "baghdad",
+                "afghan"
+            ]
+        },
+        {
+            "question": "What is the capital city of United Arab Emirates?",
+            "correct-answer": "abu dhabi"
+        },
+        {
+            "question": "What is the capital city of Norway?",
+            "correct-answer": "oslo",
+            "incorrect-answers": [
+                "copenhagan",
+                "stockholm",
+                "helsinki"
+            ]
+        },
+        {
+            "question": "What is the capital city of Sweden?",
+            "correct-answer": "stockholm",
+            "incorrect-answers": [
+                "oslo",
+                "copenhagan",
+                "helsinki"
+            ]
+        },
+        {
+            "question": "What is the capital city of Iceland?",
+            "correct-answer": "reykjavik",
+            "incorrect-answers": [
+                "stockholm",
+                "copenhagan",
+                "helsinki"
+            ]
+        },
+        {
+            "question": "What is the capital city of Thailand?",
+            "correct-answer": "bangkok"
+        },
+        {
+            "question": "What is the capital city of Italy?",
+            "correct-answer": "rome"
+        }
     ]
 }
